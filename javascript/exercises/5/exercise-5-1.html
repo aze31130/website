@@ -40,7 +40,7 @@
         <div class="js-box">
            
             <p>First Name: &nbsp;<input type="text" id="fName"></p>
-            
+            <p><button onclick="showUserInput()">Show user input</button></p>
             <p>You entered: </p>
             <div id="resultBox"></div>
  
@@ -65,5 +65,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+function showUserInput() {
+   /* Place the value from the input field in a variable */
+   let userInput = document.getElementById("fName").value;
+   /* Display the value on web page */
+   document.getElementById("resultBox").innerHTML = "<b>"+userInput+"<\/b>";
+}
+</script>
 </body>
 </html>
